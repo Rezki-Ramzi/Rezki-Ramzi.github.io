@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramzi Rezki — PhD Researcher</title>
+  <meta name="description" content="Ramzi Rezki — PhD student at Cnam Paris working on graph neural networks and transformers for network intrusion detection." />
+  <meta property="og:title" content="Ramzi Rezki — PhD Researcher" />
+  <meta property="og:description" content="Graph Neural Networks & Machine Learning for Network Intrusion Detection." />
+  <meta property="og:image" content="assets/img/profile.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%238f1d3a'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='30' fill='white'>RR</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="brand"><span class="brand__mark">RR</span><span class="brand__name">Ramzi Rezki</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#achievements">Certifications</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="graphBg" aria-hidden="true"></canvas>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow mono">&gt; PhD Researcher · Cnam Paris</p>
+          <h1>Ramzi <span class="accent">Rezki</span></h1>
+          <p class="hero__lead">
+            I build and stress-test machine-learning models that detect attacks in network traffic —
+            <strong>Graph Neural Networks</strong>, <strong>Transformers</strong> and honest baselines —
+            for attack detection, IoT and APT threats.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#publications">View publications</a>
+            <a class="btn btn--ghost" id="cvBtnHero" href="#cv">Curriculum Vitae</a>
+          </div>
+          <ul class="socials" id="socials"></ul>
+        </div>
+        <div class="hero__photo">
+          <div class="photo-ring">
+            <img src="assets/img/profile.jpg" alt="Portrait of Ramzi Rezki" width="640" height="640" />
+          </div>
+          <div class="chip chip--float chip--a mono">GNN</div>
+          <div class="chip chip--float chip--b mono">IDS</div>
+          <div class="chip chip--float chip--c mono">IoT</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">01</span>
+          <h2>About</h2>
+        </header>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              I am a PhD student at <strong>Cnam Paris</strong> working on network intrusion detection, supported by the
+              French <strong>ANR GNADIS</strong> project (ANR-23-IAS4-0002). My research asks a practical question:
+              <em>when does modelling traffic as a graph actually help detect attacks — and when is a well-tuned
+              classical model enough?</em>
+            </p>
+            <p>
+              I work on temporal graph attention models for IoT attack detection, on benchmarking NLP-style and
+              tabular transformers for intrusion detection, and on detecting the stages of Advanced Persistent Threats.
+              I care about reproducibility, leakage auditing and calibrated, explainable models.
+            </p>
+            <p>
+              Before Cnam, I graduated as a <strong>computer science engineer in intelligent systems &amp; data science</strong>
+              from ESI Algiers. I also teach web development (HTML/CSS) and computer networks, and supervise master's students
+              on IoT attack detection.
+            </p>
+          </div>
+          <ul class="focus reveal">
+            <li><span class="focus__k mono">01</span><div><h3>Graph Neural Networks</h3><p>Temporal graphs, GAT and line-graph GNNs for IoT &amp; DDoS traffic.</p></div></li>
+            <li><span class="focus__k mono">02</span><div><h3>Transformers for IDS</h3><p>BERT-family vs. tabular transformers, calibration &amp; XAI.</p></div></li>
+            <li><span class="focus__k mono">03</span><div><h3>Empirical rigor</h3><p>Ablations, leakage detection, zero-shot generalization.</p></div></li>
+            <li><span class="focus__k mono">04</span><div><h3>APT detection</h3><p>Stage classification on multi-modal attack datasets.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="section section--alt" id="publications">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">02</span>
+          <h2>Publications</h2>
+        </header>
+        <div class="filters reveal" id="pubFilters" role="tablist" aria-label="Filter publications">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="published">Published</button>
+          <button class="filter" data-filter="under-review">Under review</button>
+          <button class="filter" data-filter="in-preparation">In preparation</button>
+        </div>
+        <div class="pubs" id="pubGrid"></div>
+        <p class="note reveal">Click a card to open the paper, code and abstract.</p>
+      </div>
+    </section>
+
+    <!-- ============ CV ============ -->
+    <section class="section" id="cv">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">03</span>
+          <h2>Curriculum Vitae</h2>
+          <a class="btn btn--ghost btn--sm section__action" id="cvDownload" href="#" download>
+            <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>Download PDF
+          </a>
+        </header>
+        <div class="cv">
+          <div class="cv__col">
+            <h3 class="cv__title reveal">Education</h3>
+            <ol class="timeline" id="cvEducation"></ol>
+            <h3 class="cv__title reveal">Research &amp; Teaching</h3>
+            <ol class="timeline" id="cvExperience"></ol>
+          </div>
+          <aside class="cv__side">
+            <div class="panel reveal">
+              <h3 class="cv__title">Skills</h3>
+              <div id="cvSkills"></div>
+            </div>
+            <div class="panel reveal">
+              <h3 class="cv__title">Languages</h3>
+              <ul class="plain" id="cvLanguages"></ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEACHING ============ -->
+    <section class="section section--alt" id="teaching">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">04</span>
+          <h2>Teaching</h2>
+        </header>
+        <div class="courses" id="courseGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">05</span>
+          <h2>Certifications &amp; Achievements</h2>
+        </header>
+        <div class="badges" id="achGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">06</span>
+          <h2>Get in touch</h2>
+        </header>
+        <div class="contact">
+          <div class="contact__info reveal">
+            <p>Questions about my research, a collaboration idea, or a student with a question about a course? Leave me a message — it goes straight to my inbox.</p>
+            <a class="contact__mail mono" id="mailLink" href="#"></a>
+            <ul class="socials socials--col" id="socials2"></ul>
+          </div>
+          <form class="form reveal" id="contactForm" novalidate>
+            <div class="form__row">
+              <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required /></label>
+              <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required /></label>
+            </div>
+            <label class="field"><span>Subject</span><input name="_subject" type="text" placeholder="Collaboration, course question…" /></label>
+            <label class="field"><span>Message</span><textarea name="message" rows="6" required></textarea></label>
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button class="btn btn--primary btn--block" type="submit" id="sendBtn">
+              <span class="btn__label">Send message</span>
+              <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Ramzi Rezki · Cnam Paris</p>
+      <a href="#top" class="mono">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ PUBLICATION MODAL ============ -->
+  <div class="modal" id="pubModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal__close" data-close aria-label="Close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
