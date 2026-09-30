@@ -26,6 +26,6 @@ Example course entry:
 `type` can be `lecture`, `lab`, `exam` or `solution` — filter tabs appear automatically.
 
 ## Contact form
-Messages are delivered to `ramzi.rezki@lecnam.net` through [FormSubmit](https://formsubmit.co) (free, no account).
+Messages are delivered to `ramzi.rezki` through [FormSubmit](https://formsubmit.co) (free, no account).
 **The very first message** triggers an activation email from FormSubmit — click the link in it once, and all later messages arrive normally.
 If the service is unreachable, visitors get a one-click fallback that opens their email app.
