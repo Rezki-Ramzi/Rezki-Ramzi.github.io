@@ -15,7 +15,7 @@ const SITE = {
     // TODO: replace with your exact LinkedIn profile URL (e.g. https://www.linkedin.com/in/ramzi-rezki)
     linkedin: "https://www.linkedin.com/search/results/all/?keywords=Ramzi%20Rezki",
     // TODO: your GitHub profile, e.g. "https://github.com/ramzirezki"
-    github: "https://github.com/",
+    github: "https://github.com/Rezki-Ramzi",
   },
   cvPdf: "assets/cv/Ramzi_Rezki_CV.pdf",
 };
